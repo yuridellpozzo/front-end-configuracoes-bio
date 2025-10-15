@@ -1,12 +1,97 @@
+/* =================================================================== */
+/* CONFIGURAÇÕES GLOBAIS DE FONTE (INTER) */
+/* =================================================================== */
 body {
+    /* Aplica a fonte Inter a todo o corpo da página */
     font-family: 'Inter', sans-serif;
 }
-/* Garante que todos os títulos de seção usem um peso maior */
+
+/* Ajuste de hierarquia de fontes para Títulos (Negrito) e Cargos (Mais Leve) */
 h1, h2, h3, h4, .offcanvas-title {
     font-weight: 700; /* Negrito */
 }
 
-/* Altera o peso do cargo para ser mais discreto, como já fizemos no Navbar */
 .text-secondary {
-    font-weight: 300 !important; /* Leve */
+    font-weight: 300 !important; /* Leve para o cargo do usuário */
+}
+
+/* =================================================================== */
+/* 1. ESTILIZAÇÃO DO TOGGLER (BOTÃO DOS 3 RISCOS) */
+/* =================================================================== */
+.navbar-toggler {
+    /* Fundo verde, unificando com o tema dos botões de módulo */
+    background-color: #198754; 
+    /* Borda branca, como solicitado */
+    border-color: rgba(255, 255, 255, 0.5); 
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+/* =================================================================== */
+/* 2. ESTILIZAÇÃO DOS BOTÕES DO OFFCANVAS (MÓDULOS) */
+/* =================================================================== */
+.offcanvas-body .btn-success {
+    /* Aplica a borda branca aos botões de módulo */
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    /* Garante que o raio de borda seja aplicado (se não for 0) */
+    border-radius: 0.375rem; 
+}
+/* ------------------------------------------------------------------- */
+/* 4. EFEITO HOVER / DESTAQUE NOS BOTÕES DE MÓDULO (OFFCANVAS) */
+/* ------------------------------------------------------------------- */
+
+/* Aplica uma transição suave para as mudanças de estilo */
+.offcanvas-body .btn-success {
+    /* ... (manter as regras anteriores aqui) ... */
+    
+    /* Adiciona a transição para suavizar a mudança de cor e o zoom */
+    transition: all 0.2s ease-in-out; 
+}
+
+/* Efeito ao passar o mouse: Inverte Cores e Aumenta sutilmente */
+.offcanvas-body .btn-success:hover {
+    /* 1. Mudar o fundo para BRANCO */
+    background-color: #ffffff !important; 
+    
+    /* 2. Mudar a letra para VERDE */
+    color: #198754 !important; 
+    
+    /* 3. Manter a borda verde no hover (opcional, mas fica bom) */
+    border-color: #198754 !important; 
+    
+    /* 4. Aumentar Sutilmente (Zoom) */
+    transform: scale(1.02); 
+    
+    /* 5. Sombra para dar profundidade (opcional) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* =================================================================== */
+/* 3. CORREÇÃO E ESTILIZAÇÃO DO BOTÃO "SAIR" (DROPDOWN) */
+/* =================================================================== */
+
+/* Corrige o item de lista (li) para remover o padding cinza em volta do botão */
+.dropdown-menu-dark li {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Remove o padding do menu para preencher toda a largura */
+.dropdown-menu-dark {
+    padding: 0 !important;
+}
+
+/* Força a cor inicial VERDE e centraliza o texto */
+#btn-sair {
+    background-color: #198754 !important; /* Verde (btn-success) */
+    color: white !important;
+    text-align: center;
+    border-radius: 0; /* Remove arredondamento para preencher o canto */
+}
+
+/* Altera a cor do botão "Sair" para VERMELHO ao passar o mouse (Hover) */
+#btn-sair:hover {
+    background-color: #dc3545 !important; /* Vermelho (btn-danger) */
+    border-color: #dc3545 !important;
+    color: white !important;
 }
