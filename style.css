@@ -1,0 +1,12 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+/* Garante que todos os títulos de seção usem um peso maior */
+h1, h2, h3, h4, .offcanvas-title {
+    font-weight: 700; /* Negrito */
+}
+
+/* Altera o peso do cargo para ser mais discreto, como já fizemos no Navbar */
+.text-secondary {
+    font-weight: 300 !important; /* Leve */
+}
