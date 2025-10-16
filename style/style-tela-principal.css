@@ -15,15 +15,29 @@ h1, h2, h3, h4, .offcanvas-title {
     font-weight: 300 !important; /* Leve para o cargo do usuário */
 }
 
-/* =================================================================== */
+/* ------------------------------------------------------------------- */
 /* 1. ESTILIZAÇÃO DO TOGGLER (BOTÃO DOS 3 RISCOS) */
-/* =================================================================== */
+/* ------------------------------------------------------------------- */
 .navbar-toggler {
-    /* Fundo verde, unificando com o tema dos botões de módulo */
+    /* Define o fundo verde e a borda branca */
     background-color: #198754; 
-    /* Borda branca, como solicitado */
     border-color: rgba(255, 255, 255, 0.5); 
     border: 1px solid rgba(255, 255, 255, 0.5);
+    
+    /* Adiciona a transição para suavizar a animação */
+    transition: all 0.2s ease-in-out; 
+}
+
+/* Efeito ao passar o mouse (Hover) */
+.navbar-toggler:hover {
+    /* Aumenta o botão sutilmente */
+    transform: scale(1.1); 
+    
+    /* Adiciona uma sombra para dar um efeito de elevação */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+    
+    /* Opcional: Escurece levemente o fundo (hover clássico) */
+    background-color: #157347; 
 }
 
 
@@ -86,7 +100,8 @@ h1, h2, h3, h4, .offcanvas-title {
     background-color: #198754 !important; /* Verde (btn-success) */
     color: white !important;
     text-align: center;
-    border-radius: 0; /* Remove arredondamento para preencher o canto */
+    /* Define o raio de borda para o padrão do Bootstrap (0.375rem) */
+    border-radius: 0.375rem !important; 
 }
 
 /* Altera a cor do botão "Sair" para VERMELHO ao passar o mouse (Hover) */
