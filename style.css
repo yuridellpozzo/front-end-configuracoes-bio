@@ -1,0 +1,77 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Garante que todos os títulos de seção usem um peso maior */
+h1, h2, h3, h4, .offcanvas-title {
+    font-weight: 700; /* Negrito */
+}
+
+/* Altera o peso do cargo para ser mais discreto, como já fizemos no Navbar */
+.text-secondary {
+    font-weight: 300 !important; /* Leve */
+}
+
+/* Remove o padding padrão do item do dropdown para que o botão preencha o espaço */
+.dropdown-menu-dark li {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Garante que o item do dropdown não tenha margin extra */
+.dropdown-menu-dark {
+    padding: 0 !important;
+}
+
+/* Garante que o link do botão preencha toda a área do item de lista */
+#btn-sair {
+    text-align: center;
+    border-radius: 0; /* Remove o arredondamento de borda do botão se ele estiver ocupando 100% */
+}
+
+/* O restante do seu CSS já deve estar ok com o !important para cores */
+#btn-sair {
+    background-color: #198754 !important; /* Cor do btn-success */
+    color: white !important; /* Garante que o texto fique branco */
+}
+
+#btn-sair:hover {
+    background-color: #dc3545 !important; /* Cor do btn-danger */
+    border-color: #dc3545 !important;
+    color: white !important;
+}
+/* ------------------------------------------------------------------- */
+/* 1. Mudar o fundo do TOGGLER (botão dos 3 riscos) para verde */
+/* ------------------------------------------------------------------- */
+.navbar-toggler {
+    /* Define o fundo verde, a mesma cor do btn-success do Bootstrap */
+    background-color: #198754; 
+    /* Garante que o ícone do menu (os 3 riscos) fique branco */
+    border-color: rgba(255, 255, 255, 0.1); 
+}
+
+/* ------------------------------------------------------------------- */
+/* 2. Estilização do Botão "Sair" */
+/* ------------------------------------------------------------------- */
+
+/* Centraliza o texto "Sair" dentro do botão */
+#btn-sair {
+    text-align: center;
+}
+/* ------------------------------------------------------------------- */
+/* 3. Estilização dos Botões do Offcanvas (Módulos) */
+/* ------------------------------------------------------------------- */
+
+.offcanvas-body .btn-success {
+    /* Aplica uma borda branca de 1px a todos os botões verdes dentro do Offcanvas */
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    /* O valor 0.5 de opacidade simula a borda leve do toggler do Bootstrap */
+    
+    /* Remove o raio de borda, se desejar botões totalmente retangulares,
+       ou ajuste o valor (ex: 5px) para mantê-lo suave. */
+    border-radius: 0.375rem; 
+}
+
+/* ------------------------------------------------------------------- */
+/* Mantenha o restante do seu CSS aqui, incluindo as regras anteriores */
+/* ------------------------------------------------------------------- */
