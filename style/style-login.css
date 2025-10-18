@@ -32,12 +32,17 @@ body::before {
     height: 100vh;
 }
 
+/* =================================================================== */
+/* ESTILIZAÇÃO DO CARD DE LOGIN (SEMI-TRANSPARENTE) */
+/* =================================================================== */
 .card.bg-secondary {
-    /* Mantém o fundo escuro do card de login como você pediu */
-    background-color: #212529 !important; 
+    /* Usamos RGBA para definir a cor preta (#000000) com 80% de opacidade (0.8) */
+    background-color: rgba(0, 0, 0, 0.8) !important; 
     border: none;
-    /* Ajuste de margem superior se a imagem estiver cobrindo o título */
-    /* Exemplo: margin-top: 50px; */ 
+    /* Adicione um padding um pouco maior para espaçar bem o conteúdo */
+    padding: 2rem !important; 
+    border-radius: 0.5rem; /* Adiciona um arredondamento sutil */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra para profundidade */
 }
 
 /* ... (Mantenha os outros estilos do seu style-login.css) ... */

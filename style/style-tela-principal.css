@@ -110,3 +110,38 @@ h1, h2, h3, h4, .offcanvas-title {
     border-color: #dc3545 !important;
     color: white !important;
 }
+
+/* =================================================================== */
+/* 5. AJUSTE COR DE FUNDO (NAVBAR E OFFCANVAS) PARA PRETO */
+/* =================================================================== */
+.navbar.bg-dark {
+    /* Altera o fundo da navbar para PRETO PURO (#000000)
+       para combinar com o fundo da imagem dos ícones.
+    */
+    background-color: #000000 !important; 
+}
+
+.offcanvas.text-bg-dark {
+    /* Garante que o menu lateral (offcanvas) também seja PRETO PURO */
+    background-color: #000000 !important; 
+}
+
+
+/* =================================================================== */
+/* 6. CENTRALIZAÇÃO DOS ÍCONES NA NAVBAR */
+/* =================================================================== */
+.navbar-icons-centered {
+    position: absolute; /* Posicionamento absoluto */
+    left: 50%;          /* Começa no meio horizontal */
+    top: 50%;           /* Começa no meio vertical */
+    transform: translate(-50%, -50%); /* Puxa de volta pela metade do seu tamanho */
+    
+    /* Impede que os ícones capturem cliques (opcional, mas bom) */
+    pointer-events: none; 
+}
+
+/* Define a altura da imagem dos ícones na navbar */
+.navbar-icons-centered img {
+     /* Mantendo a altura da imagem maior, como solicitado antes */
+     height: 70px; 
+}
